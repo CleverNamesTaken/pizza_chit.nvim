@@ -42,12 +42,12 @@ end
 
 M.getData = function()
 -- Open up the yaml file
-  local yaml = require("pizzachit.config").options.yaml
+  local yaml = require("pizza_chit.config").options.yaml
 	local file = io.open(yaml, "r")  -- Open the file in read mode
 	local content = file:read("*all")          -- Read the entire file content into a string
 	file:close()
 -- Parse the yaml file
-	local yaml = require("pizzachit.YAMLParserLite")
+	local yaml = require("pizza_chit.YAMLParserLite")
 	local data = yaml.parse(content)
   return data
 end
@@ -96,8 +96,8 @@ end
 M.pizzaThesaurus = function()
   -- Lookup values using neovim thesaurus function
   -- Identify the thesaurus
-  local yaml = require("pizzachit.config").options.yaml
-  local thesaurus_file = require("pizzachit.config").options.thesaurus
+  local yaml = require("pizza_chit.config").options.yaml
+  local thesaurus_file = require("pizza_chit.config").options.thesaurus
   -- Update the thesaurus file
   local yq_command = string.format([[cat %s | yq 'to_entries | map({(.key): .value.IP})' | awk -F '"' '/:/ {printf "%%s %%s\n", $2,$4}' >> %s]] ,
   yaml, thesaurus_file)

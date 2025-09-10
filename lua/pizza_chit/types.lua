@@ -2,14 +2,14 @@
 --- This is a simple "definition file" (https://luals.github.io/wiki/definition-files/),
 --- the @meta tag at the top is its hallmark.
 
--- lua/pizzachit/init.lua -----------------------------------------------------------
+-- lua/pizza_chit/init.lua -----------------------------------------------------------
 
 ---@class Receipt
 ---@field setup function: setup the plugin
 ---@field hello function: Say hello to the user
 ---@field bye function: Say bye to the user
 
--- lua/pizzachit/config.lua ---------------------------------------------------------
+-- lua/pizza_chit/config.lua ---------------------------------------------------------
 
 ---@class Config
 ---@field defaults Options: default options

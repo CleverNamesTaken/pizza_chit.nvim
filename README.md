@@ -19,7 +19,7 @@ mkdir -p ~/.config/nvim
 git clone https://github.com/CleverNamesTaken/pizza_chit.nvim
 cp -r pizza_chit.nvim/lua ~/.config/nvim
 cp -r pizza_chit.nvim/plugin ~/.config/nvim
-echo 'require("pizza_chit.nvim")' >> ~/.config/nvim/init.lua
+echo 'require("pizza_chit")' >> ~/.config/nvim/init.lua
 ```
 
 # Tutorial

@@ -1,5 +1,5 @@
 -- local yaml = require("YAMLParserLite")
--- local file = io.open("/Users/davidlee/pizzachit/filename.yaml", "r")  -- Open the file in read mode
+-- local file = io.open("/Users/davidlee/pizza_chit/filename.yaml", "r")  -- Open the file in read mode
 -- local content = file:read("*all")          -- Read the entire file content into a string
 -- file:close()
 --

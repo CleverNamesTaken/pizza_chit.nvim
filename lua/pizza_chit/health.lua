@@ -4,7 +4,7 @@ local M = {}
 ---Validate the options table obtained from merging defaults and user options
 local function validate_opts_table()
   local health = require("health")
-  local opts = require("pizzachit.config").options
+  local opts = require("pizza_chit.config").options
 
   local ok, err = pcall(function()
     vim.validate {
@@ -24,7 +24,7 @@ end
 ---This function is used to check the health of the plugin
 ---It's called by `:checkhealth` command
 M.check = function()
-  print("pizzachit.nvim health check")
+  print("pizza_chit.nvim health check")
   validate_opts_table()
 
   -- Add more checks:
