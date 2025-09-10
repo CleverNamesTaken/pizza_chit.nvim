@@ -1,0 +1,22 @@
+-- local yaml = require("YAMLParserLite")
+-- local file = io.open("/Users/davidlee/pizzachit/filename.yaml", "r")  -- Open the file in read mode
+-- local content = file:read("*all")          -- Read the entire file content into a string
+-- file:close()
+--
+-- local tb = yaml.parse(content)
+--
+-- local keys = {}
+-- for key in string.gmatch(arg[1], "([^" .. ":" .. "]+)") do
+-- 	table.insert(keys, key)
+-- end
+-- for i, key in ipairs(keys) do
+-- 	if type(tb) == "table" and tb[key] ~= nil then
+-- 		tb=tb[key]
+-- 	end
+-- end
+--
+-- if type(tb) == "string" then
+-- 	print(tb)
+-- else
+-- 	print("Lookup failed")
+-- end
